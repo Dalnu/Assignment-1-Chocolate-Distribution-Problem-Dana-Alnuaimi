@@ -151,6 +151,10 @@ class Chocolate:  # Define a class named Chocolate
         self.price = price  # Initialize price attribute
         self.type = type  # Initialize type attribute
 
+chocolates = [Chocolate("002", 5, 2, "Almond chocolate"), Chocolate("005", 7, 4, "Peanut butter chocolate"),
+              Chocolate("007", 6, 3, "Hazelnut chocolate"), Chocolate("010", 8, 5, "Mint chocolate"),
+              Chocolate("013", 4, 3, "Spicy chocolate"), Chocolate("016", 6, 4, "Orange chocolate")]
+
 def findSCprice(chocolates, price):  # Define a function to find a chocolate by price
     for chocolate in chocolates:  # Iterate through the chocolates list
         if chocolate.price == price:  # Check if the chocolate's price matches the given price
